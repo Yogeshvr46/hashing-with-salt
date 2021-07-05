@@ -2,7 +2,7 @@ import hashlib
 import uuid
 from module import sec
 Texthash = (sec)
-#print(sec)
+print(sec) #used to identitfy whether the given data from module is being fetched or not
 secure = hashlib.sha256(Texthash.encode()).hexdigest()
 print("the encoded code for the text is :", secure)
 salt = uuid.uuid4().hex
